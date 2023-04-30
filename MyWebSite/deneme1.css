@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 330px;
+    margin-right: 330px;
+    font-family: 'Montserrat', sans-serif;
+    color: #202020;
+}    
+
+
+.profil{
+    display: flex;
+    flex-direction: row;
+}
+.main img{
+    width: 100px;
+}
+
+.main h1{
+    font-style: normal;
+    font-weight: 900;
+    margin-left: 20px;
+    margin-top: 30px;
+   
+}
+
+.main h1:hover{
+    color: #f59115;
+}
+
+
+
+.main p{
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.social a{
+    font-size: 25px;
+  
+}
+
+.social i{
+    color: rgb(32, 32, 32);
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition-duration: 0.3s;
+}
+
+.social i:hover{
+    color: #f59115;
+}
+
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0,) ; /* Black fallback color */
+    background-color:  rgba(32,32,32,0.9) ; /* Black w/opacity */
+    backdrop-filter: blur(8px);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 40px;
+  background-color: transparent;
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+.overlay .closebtn:hover{
+    color: #f59115;
+}
+  
+.software{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px;
+    margin-right: 330px;
+    margin-left: 330px;
+    margin-top: 115px;
+    color: #f9f9f9;
+}
+
+.software1{
+    display: flex;
+    flex-direction: column;
+}
+
+.software1 h2{
+    margin: 0px;
+    
+}
+.software1 p{
+    font-style: normal;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.ms{
+    display: flex;
+    flex-direction: column;
+}
+
+.ms h3{
+    margin: 0;
+}
+
+.ms1{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-style: italic;
+}
+
+.ms1 i {
+    margin-right: 10px;
+}
+
+.ms1 div{
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    color:#f9f9f9;
+}
+
+.portfolio h3{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.portlink{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.portlink a{
+    color: #f9f9f9;
+    text-decoration: none;
+    font-style: italic;
+    transition-duration: 0.3s;
+}
+
+.portlink a:hover{
+    color: rgb(245, 145, 21);
+}
+
+.portlink i{
+    margin-right: 10px;
+}
+
+
+.overlayy {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    right: 0;
+    top: 0;
+    background-color: rgb(0,0,0,) ; /* Black fallback color */
+    background-color:  rgba(32,32,32,0.9) ; /* Black w/opacity */
+    backdrop-filter: blur(8px);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  .overlayy .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    font-size: 40px;
+    background-color: transparent;
+    color: #f9f9f9;
+    text-decoration: none;
+  }
+
+  .overlayy .closebtn:hover{
+    color: #f59115;
+}
+
+.smm{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-right: 800px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f9f9f9;
+    margin-right: 330px;
+    margin-left: 330px;
+    margin-top: 115px;
+}
+
+.smmp {
+    display: flex;
+    flex-direction: column;
+}
+
+.smmp h2 {
+    margin: 0px;
+}
+
+.smmp p{
+    font-style: normal;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.m{
+    display: flex;
+    flex-direction: column;  
+}
+
+.m h3{
+    margin: 0;
+}
+
+.m1{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-style: italic;
+}
+
+.m1 i{
+    margin-right: 10px;
+}
+
+.portfolio2{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.portfolio2 h3{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.portlink2{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.portlink2 a{
+    color: #f9f9f9;
+    text-decoration: none;
+    font-style: italic;
+    transition-duration: 0.3s;
+}
+
+.portlink2 a:hover{
+    color: rgb(245, 145, 21);
+}
+
+.portlink2 i{
+    margin-right: 10px;
+}
+
+.lbutton{
+    transform: rotate(90deg);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    z-index: 3;
+    top: 300px;
+    left: -66px;
+}
+
+.lbutton button{
+    background-color: #202020;
+    border:1px solid #101010;
+    color: #f9f9f9;
+    width: 170px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: large;
+    transition-duration: 0.3s;
+}
+
+.lbutton button:hover{
+    background-color: #f59015f3;
+    color: #202020;
+    border: 0;
+}
+
+.rbutton{
+    transform: rotate(-90deg);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    z-index: 3;
+    top: 300px;
+    right: -66px;
+}
+
+.rbutton button{
+    background-color: #202020;
+    border:1px solid #101010;
+    color: #f9f9f9;
+    width: 170px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: large;
+    transition-duration: 0.3s;
+}
+
+.rbutton button:hover{
+    background-color: #f59015f3;
+    color: #202020;
+    border: 0;
+}
+
+.softwaremob{
+    display: none;
+}
+
+.smmmob{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    .main{
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    .overlay{
+        display: none;
+    }
+    .overlayy{
+        display: none;
+    }
+    .lbutton{
+        display: none;
+    }
+    .rbutton{
+        display: none;
+    }
+
+    .main{
+        margin-top: 250px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .profil{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main img{
+        width: 130px;
+    }
+
+    .main h1{
+        text-align: center;
+        margin: 0;
+    }
+
+    .softwaremob{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        margin: 30px;
+        margin-top: 100px;
+    }
+
+}
